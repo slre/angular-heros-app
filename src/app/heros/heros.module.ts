@@ -6,6 +6,9 @@ import { HeroComponent } from './pages/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { HerosRoutingModule } from './heros-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
+import { HeroCardComponent } from './components/hero-card/hero-card.component';
 
 
 
@@ -15,12 +18,15 @@ import { HerosRoutingModule } from './heros-routing.module';
     SearchComponent,
     HeroComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    HeroCardComponent
     
   ],
   imports: [
     CommonModule,
-    HerosRoutingModule
+    HerosRoutingModule,
+    FlexLayoutModule,
+    MaterialModule
   ]
 })
 export class HerosModule { }
